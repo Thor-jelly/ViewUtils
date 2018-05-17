@@ -2,11 +2,11 @@
 
 [TOC]
 
-> 模仿xutils3和butterKnife两个注解框架，主要是模仿xutils3这个注解框架。
-> 下面是两篇关于注解的知识点(引用)：
-> [秒懂，Java 注解 （Annotation）你可以这样学](https://blog.csdn.net/briblue/article/details/73824058)
-> [轻松学，Java 中的代理模式及动态代理](https://blog.csdn.net/briblue/article/details/73928350) 
-> 我的模仿框架在最后有写怎么实现的
+> 模仿xutils3和butterKnife两个注解框架，主要是模仿xutils3这个注解框架。 
+> 下面是两篇关于注解的知识点(引用)：  
+> [秒懂，Java 注解 （Annotation）你可以这样学](https://blog.csdn.net/briblue/article/details/73824058)  
+> [轻松学，Java 中的代理模式及动态代理](https://blog.csdn.net/briblue/article/details/73928350)   
+> 我的模仿框架在最后有写怎么实现的  
 
 # 我的IOC使用说明
 - ViewById：是findViewById注解
