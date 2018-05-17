@@ -357,7 +357,7 @@ public class ViewUtils {
         for (Field field : fields) {
             ViewById viewById = field.getAnnotation(ViewById.class);
             if (viewById == null) {
-                return;
+                continue;
             }
             //获取注解中的id值
             int value = viewById.value();
@@ -365,7 +365,7 @@ public class ViewUtils {
             //3.通过findViewById找到View
             View view = viewFinder.findViewById(value);
             if (view == null) {
-                return;
+                continue;
             }
 
             //4.动态的注入找到的View
@@ -413,7 +413,7 @@ private static void injectEvent(ViewFinder viewFinder, Object object) {
     for (Method method : methods) {
         OnClick onClick = method.getAnnotation(OnClick.class);
         if (onClick == null) {
-            return;
+            continue;
         }
 
         //可能多个也可能一个
@@ -426,7 +426,7 @@ private static void injectEvent(ViewFinder viewFinder, Object object) {
             //通过辅助类ViewFinder中的findViewById方法找到View
             View view = viewFinder.findViewById(value);
             if (view == null) {
-                return;
+                continue;
             }
 
             //4.View.setOnClickListener
